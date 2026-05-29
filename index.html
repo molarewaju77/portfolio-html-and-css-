@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olarewaju Michael – Frontend Developer crafting high-performance, user-centric web applications and premium digital experiences."
+    />
+    <meta name="author" content="Olarewaju Michael" />
+    <meta property="og:title" content="Olarewaju Michael | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Olarewaju Michael – Frontend Developer specialising in immersive interfaces and scalable web applications."
+    />
+    <meta property="og:type" content="website" />
+    <title>Olarewaju Michael | Frontend Developer</title>
+
+    <!-- Google Fonts: Inter + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ============================================================
+         NAVIGATION
+    ============================================================ -->
+    <header class="nav-header" id="nav-header" role="banner">
+      <nav class="nav-container" aria-label="Primary navigation">
+
+        <!-- Monogram Logo -->
+        <a href="#home" class="nav-logo" aria-label="Olarewaju Michael – home">
+          <span class="logo-ring" aria-hidden="true">OM</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#home"     class="nav-link" aria-current="page">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills"   class="nav-link">Skills</a></li>
+          <li><a href="#contact"  class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#home"     class="mobile-link">Home</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#skills"   class="mobile-link">Skills</a></li>
+          <li><a href="#contact"  class="mobile-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- ============================================================
+           HERO SECTION
+      ============================================================ -->
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+
+        <!-- Decorative background shapes -->
+        <div class="hero-bg-orb hero-bg-orb--1" aria-hidden="true"></div>
+        <div class="hero-bg-orb hero-bg-orb--2" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <!-- Eyebrow label -->
+          <p class="hero-eyebrow reveal-up" aria-hidden="true">
+            <span class="eyebrow-dot"></span> Available for new projects
+          </p>
+
+          <!-- Main headline -->
+          <h1 class="hero-name reveal-up" id="hero-heading" style="--delay: 0.1s">
+            Olarewaju<br /><span class="name-accent">Michael</span>
+          </h1>
+
+          <!-- Role -->
+          <p class="hero-role reveal-up" style="--delay: 0.2s">
+            <span class="role-bracket" aria-hidden="true">{</span>
+            Frontend Developer
+            <span class="role-bracket" aria-hidden="true">}</span>
+          </p>
+
+          <!-- Bio copy -->
+          <p class="hero-bio reveal-up" style="--delay: 0.3s">
+            I engineer high-performance websites and scalable web applications.
+            Focused on crafting immersive, user-centric interfaces and delivering
+            premium digital experiences.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas reveal-up" style="--delay: 0.4s">
+            <a href="#projects" class="btn btn--primary" id="hero-view-projects">
+              View Projects
+              <svg class="btn-icon" aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                <path d="M3.5 8h9m-4-4.5 4.5 4.5L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" id="hero-get-in-touch">
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Scroll hint -->
+          <div class="scroll-hint reveal-up" style="--delay: 0.6s" aria-hidden="true">
+            <span class="scroll-line"></span>
+            <span class="scroll-label">scroll</span>
+          </div>
+        </div>
+
+        <!-- Floating stat chips -->
+        <aside class="hero-stats" aria-label="Quick stats">
+          <div class="stat-chip reveal-up" style="--delay: 0.5s">
+            <strong>3+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat-chip reveal-up" style="--delay: 0.6s">
+            <strong>20+</strong>
+            <span>Projects Shipped</span>
+          </div>
+          <div class="stat-chip reveal-up" style="--delay: 0.7s">
+            <strong>100%</strong>
+            <span>Client Satisfaction</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           PROJECTS SECTION
+      ============================================================ -->
+      <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <div class="section-container">
+
+          <!-- Section Header -->
+          <div class="section-header">
+            <p class="section-eyebrow reveal-up">Selected work</p>
+            <h2 class="section-title reveal-up" id="projects-heading" style="--delay: 0.1s">
+              Featured Projects
+            </h2>
+            <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+              A curated selection of complex, real-world applications built with
+              precision and purpose.
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid" role="list">
+
+            <!-- Project 1 -->
+            <article class="project-card reveal-up" role="listitem" style="--delay: 0.1s" aria-label="NexaShop – E-commerce Platform">
+              <div class="card-header">
+                <div class="card-number" aria-hidden="true">01</div>
+                <div class="card-links">
+                  <a href="#" class="card-link-icon" aria-label="View NexaShop live demo">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M9 2h5m0 0v5m0-5L7 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a href="#" class="card-link-icon" aria-label="View NexaShop source code on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">NexaShop</h3>
+                <p class="card-subtitle">Immersive E-Commerce Platform</p>
+                <p class="card-desc">
+                  A next-gen shopping experience featuring real-time 3D product
+                  visualisation, AR try-on capability, and a highly optimised
+                  checkout flow built as a Progressive Web App.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">WebGL</li>
+                  <li class="tag">PWA</li>
+                  <li class="tag">REST API</li>
+                  <li class="tag">UI/UX</li>
+                </ul>
+              </div>
+
+              <div class="card-hover-line" aria-hidden="true"></div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal-up" role="listitem" style="--delay: 0.2s" aria-label="ClearVault – Fintech Budgeting App">
+              <div class="card-header">
+                <div class="card-number" aria-hidden="true">02</div>
+                <div class="card-links">
+                  <a href="#" class="card-link-icon" aria-label="View ClearVault live demo">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M9 2h5m0 0v5m0-5L7 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a href="#" class="card-link-icon" aria-label="View ClearVault source code on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">ClearVault</h3>
+                <p class="card-subtitle">Fintech Budgeting Application</p>
+                <p class="card-desc">
+                  A robust personal finance dashboard with real-time transaction
+                  categorisation, AI-powered spending insights, interactive
+                  data visualisations, and bank-grade security architecture.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">Canvas API</li>
+                  <li class="tag">OAuth 2.0</li>
+                  <li class="tag">REST API</li>
+                  <li class="tag">PWA</li>
+                </ul>
+              </div>
+
+              <div class="card-hover-line" aria-hidden="true"></div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal-up" role="listitem" style="--delay: 0.3s" aria-label="Prism Admin – Analytics Dashboard">
+              <div class="card-header">
+                <div class="card-number" aria-hidden="true">03</div>
+                <div class="card-links">
+                  <a href="#" class="card-link-icon" aria-label="View Prism Admin live demo">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M9 2h5m0 0v5m0-5L7 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a href="#" class="card-link-icon" aria-label="View Prism Admin source code on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Prism Admin</h3>
+                <p class="card-subtitle">Enterprise Analytics Dashboard</p>
+                <p class="card-desc">
+                  A scalable, role-based admin platform with real-time analytics,
+                  multi-tenant data isolation, highly configurable widget grid,
+                  and pixel-perfect data export pipelines.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">WebSockets</li>
+                  <li class="tag">IndexedDB</li>
+                  <li class="tag">UI/UX</li>
+                  <li class="tag">A11y</li>
+                </ul>
+              </div>
+
+              <div class="card-hover-line" aria-hidden="true"></div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card reveal-up" role="listitem" style="--delay: 0.4s" aria-label="Aura – Design System & Component Library">
+              <div class="card-header">
+                <div class="card-number" aria-hidden="true">04</div>
+                <div class="card-links">
+                  <a href="#" class="card-link-icon" aria-label="View Aura live demo">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M9 2h5m0 0v5m0-5L7 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a href="#" class="card-link-icon" aria-label="View Aura source code on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Aura</h3>
+                <p class="card-subtitle">Design System & Component Library</p>
+                <p class="card-desc">
+                  A production-grade design system and vanilla component library
+                  with full accessibility compliance, comprehensive documentation,
+                  automated visual regression testing, and a live playground.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li class="tag">CSS Custom Props</li>
+                  <li class="tag">Web Components</li>
+                  <li class="tag">WCAG 2.1</li>
+                </ul>
+              </div>
+
+              <div class="card-hover-line" aria-hidden="true"></div>
+            </article>
+
+          </div><!-- /.projects-grid -->
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SKILLS SECTION
+      ============================================================ -->
+      <section class="skills" id="skills" aria-labelledby="skills-heading">
+        <div class="section-container">
+
+          <div class="section-header">
+            <p class="section-eyebrow reveal-up">Expertise</p>
+            <h2 class="section-title reveal-up" id="skills-heading" style="--delay: 0.1s">
+              Technical Skills
+            </h2>
+            <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+              Precision-crafted skills across the full frontend spectrum.
+            </p>
+          </div>
+
+          <div class="skills-layout">
+
+            <!-- Skill Category 1 -->
+            <div class="skill-group reveal-up" style="--delay: 0.1s">
+              <h3 class="skill-group-title">
+                <span class="skill-group-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="m6 8 2.5 2L6 12M10.5 12h3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Core Languages
+              </h3>
+              <ul class="pill-list" role="list">
+                <li class="pill">HTML5 Semantic</li>
+                <li class="pill">CSS3 / Custom Properties</li>
+                <li class="pill">Vanilla JavaScript (ES2023+)</li>
+                <li class="pill">CSS Animations & Transitions</li>
+                <li class="pill">CSS Grid & Flexbox</li>
+                <li class="pill">Fluid Typography</li>
+              </ul>
+            </div>
+
+            <!-- Skill Category 2 -->
+            <div class="skill-group reveal-up" style="--delay: 0.2s">
+              <h3 class="skill-group-title">
+                <span class="skill-group-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 2c0 0-4 3-4 8s4 8 4 8M10 2c0 0 4 3 4 8s-4 8-4 8M2 10h16" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                Modern Web APIs
+              </h3>
+              <ul class="pill-list" role="list">
+                <li class="pill">Progressive Web Apps (PWA)</li>
+                <li class="pill">Service Workers</li>
+                <li class="pill">Intersection Observer API</li>
+                <li class="pill">WebGL / Canvas API</li>
+                <li class="pill">IndexedDB & Cache API</li>
+                <li class="pill">WebSockets</li>
+              </ul>
+            </div>
+
+            <!-- Skill Category 3 -->
+            <div class="skill-group reveal-up" style="--delay: 0.3s">
+              <h3 class="skill-group-title">
+                <span class="skill-group-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                UI & Design
+              </h3>
+              <ul class="pill-list" role="list">
+                <li class="pill">Responsive Design</li>
+                <li class="pill">Glassmorphism & Soft UI</li>
+                <li class="pill">Micro-animations</li>
+                <li class="pill">Design Systems</li>
+                <li class="pill">Figma to Code</li>
+                <li class="pill">WCAG 2.1 Accessibility</li>
+              </ul>
+            </div>
+
+            <!-- Skill Category 4 -->
+            <div class="skill-group reveal-up" style="--delay: 0.4s">
+              <h3 class="skill-group-title">
+                <span class="skill-group-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none"><path d="M4 4h12v8H4zM7 16h6M10 12v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Tooling & Workflow
+              </h3>
+              <ul class="pill-list" role="list">
+                <li class="pill">Git & GitHub</li>
+                <li class="pill">REST APIs & GraphQL</li>
+                <li class="pill">Performance Optimisation</li>
+                <li class="pill">Core Web Vitals</li>
+                <li class="pill">Cross-browser Testing</li>
+                <li class="pill">SEO Best Practices</li>
+              </ul>
+            </div>
+
+          </div><!-- /.skills-layout -->
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONTACT SECTION
+      ============================================================ -->
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="section-container">
+
+          <div class="section-header">
+            <p class="section-eyebrow reveal-up">Let's connect</p>
+            <h2 class="section-title reveal-up" id="contact-heading" style="--delay: 0.1s">
+              Get in Touch
+            </h2>
+            <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+              Have a project in mind or just want to say hello?<br />
+              I'd love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+
+            <!-- Contact Info -->
+            <address class="contact-info reveal-up" style="--delay: 0.1s">
+              <p class="contact-tagline">
+                Open to freelance opportunities, collaborations, and full-time roles.
+              </p>
+
+              <ul class="contact-details" role="list">
+                <li>
+                  <span class="contact-detail-label">Email</span>
+                  <a href="mailto:michael@example.com" class="contact-detail-value">
+                    michael@example.com
+                  </a>
+                </li>
+                <li>
+                  <span class="contact-detail-label">Location</span>
+                  <span class="contact-detail-value">Nigeria 🇳🇬</span>
+                </li>
+                <li>
+                  <span class="contact-detail-label">Availability</span>
+                  <span class="contact-detail-value availability-badge">
+                    <span class="availability-dot" aria-hidden="true"></span>
+                    Open to work
+                  </span>
+                </li>
+              </ul>
+            </address>
+
+            <!-- Contact Form -->
+            <form
+              class="contact-form reveal-up"
+              id="contact-form"
+              style="--delay: 0.2s"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  aria-required="true"
+                />
+                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  aria-required="true"
+                />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tell me about your project..."
+                  rows="5"
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="form-submit-btn">
+                Send Message
+                <svg class="btn-icon" aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                  <path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <!-- Success Message -->
+              <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="m6.5 10.5 2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Message sent! I'll get back to you soon.
+              </div>
+
+            </form>
+
+          </div><!-- /.contact-layout -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+
+        <div class="footer-top">
+          <a href="#home" class="footer-logo" aria-label="Back to top">
+            <span class="logo-ring logo-ring--sm" aria-hidden="true">OM</span>
+          </a>
+
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="social-links">
+            <!-- GitHub -->
+            <a
+              href="#"
+              class="social-link"
+              aria-label="Olarewaju Michael on GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="#"
+              class="social-link"
+              aria-label="Olarewaju Michael on LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a
+              href="#"
+              class="social-link"
+              aria-label="Olarewaju Michael on X (Twitter)"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.23H2.747l7.73-8.835L2.25 2.25h6.893l4.259 5.631 5.842-5.631Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="footer-year"></span> Olarewaju Michael. Crafted with
+            <span aria-label="love" role="img">&#10084;&#65039;</span> and clean code.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M8 12V4M4 7.5l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
